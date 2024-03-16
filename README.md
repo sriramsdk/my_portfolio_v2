@@ -1,2 +1,1 @@
-# my_portfolio_v2
-my_portfolio_v2
+<meta http-equiv="Refresh" content="2; url=portfolio.html">
