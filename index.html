@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Sriram - Portfolio</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background:"dcdcdc";
+            background:"#000000";
         }
         .image {
             position: relative;
@@ -51,67 +51,137 @@
             }
             .image {
                 width:93% !important;
-                border-radius: 50%;
+                border-radius: 50% !important;
                 height: 200px;
                 margin-bottom: 20px !important;
+                position: relative !important;
+	            overflow: hidden !important;
+	            /*display: inline-block !important;*/
+	            /*border-radius: 50%;*/
+                display: block;
+            	transition: transform 0.3s;
             }
             .profile_pic {
 			    width: 200.925px !important;
 			    height: 200px;
 			    object-fit: cover;
 			}
-            /*.coding_logos{
-            	max-width: 100% !important;
-            	max-height: 150px !important;
-            }*/
+			/*.image:hover {
+				width:93% !important;
+	            border: 2px solid blue;
+	            overflow: hidden !important;
+	            border-radius: 50% !important;
+	            transform: scale(0.95);
+	        }*/
+	        #croppedImage {
+	            width: 100%; /* To fill the container */
+	            height: 100%; /* To fill the container */
+	            object-fit: cover; /* Ensure the image covers the div without stretching */
+	        }
+	        .nav-item{
+	        	font-size:15px;
+            	font-family: "Garamond", Helvetica, serif;   	
+	        }
         }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-primary d-flex">
+<!-- <nav class="navbar navbar-dark bg-primary d-flex">
     <div class="mx-2 mt-2 header">
         <h5>Hai, I'm Sriram, Welcome to My Portfolio</h5>
     </div>
-</nav>
+</nav> -->
 <div class="container-fluid">
-    <div class="row d-flex">
-        <div class="container bg-light bg-gradient mx-4 mt-3 col-10 rounded content-1" style="height: 400px;">
-            <div class="container content-details col-12 mt-2">
-                <p>I'm a Web Developer and also a Video and Photo editor, I'm Working as a Web developer for more than one year, I'm also running a Mashup Youtube Channel for more than 4 Years with 1.5K+ subscribers</p>
+    <div class="row d-flex bg-dark">
+    	<div class="container pofile text-white bordered rounded mx-4 mt-3" style="border: 1px solid blue;">
+	    	<div class="container bg-gradient mx-3 mt-3 col-11 d-flex rounded-circle image">
+	            <img class="rounded-circle profile_pic" id="croppedImage" src="images/profile_pic.JPG" alt="Example image">
+	        </div>
+	        <div class="mx-2 mt-2 mb-2 header d-flex justify-content-center">
+		        <h5>Hai, I'm Sriram.R</h5>
+		    </div>
+	        <div class="tabs mb-3">
+		        <ul class="nav nav-pills nav-justified">
+				  <li class="nav-item active">
+				    <a class="nav-link" data-toggle="tab" href="#portfolio">Portfolio</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#about_me">About Me</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+				  </li>
+				</ul>
+			</div>
+        </div>
+        <div class="container bg-light bg-gradient bordered mx-2 mt-3 mb-3 col-10 rounded content-1 tab-content" style="height: 50px;">
+        	<div class="container content-details d-flex justify-content-space-around mx-2 mt-1">
+        		<div class="container mt-2">
+        			<h5>My Resume</h5>
+        		</div>
+        		<button class="btn btn-primary ml-5" id="download" >Resume</button>
+        	</div>
+        </div>
+        <div class="container bg-light bg-gradient mx-2 mt-3 col-10 rounded content-1 tab-content" style="height: 300px;margin-bottom: 15px !important;">
+            <div class="container content-details col-12 mt-2 tab-pane fade in active" id="about_me">
+                <p>I'm a Web Developer (Back-end) and also a Video and Photo editor, I'm Working as a Web developer (Back-end) for more than one year, I'm also running a Mashup Youtube Channel for more than 4 Years with 1.5K+ subscribers</p>
             </div>
-            <div class="container content-details d-flex justify-content-center">
-                <p>My Skills in Coding</p>
-            </div>
-            <div class="container row d-flex justify-content-center">
-                <div class="coding_logos col-3 mx-1">
-                    <img class="img-fluid" src="images/html_logo.png" alt="" style="width:50px;">
-                </div>
-                <div class="coding_logos col-3 mx-1">
-                    <img class="img-fluid" src="images/css_logo.png" alt="" style="width:50px;">
-                </div>
-                <div class="coding_logos col-3 mx-1">
-                    <img class="img-fluid" src="images/bootstrap_logo.png" alt="" style="width:50px;">
-                </div>
-                <div class="coding_logos col-3 mx-1">
-                    <img class="img-fluid" src="images/javascript_logo.png" alt="" style="width:70px;margin:-4px 0 0 0;">
-                </div>
-                <div class="coding_logos col-3 mx-1 mt-2">
-                    <img class="img-fluid" src="images/jquery_logo.png" alt="" style="width:40px;">
-                </div>
-                <div class="coding_logos col-3 mx-1 mt-2">
-                    <img class="img-fluid" src="images/php_logo.png" alt="" style="width:38px;">
-                </div>
-                <div class="coding_logos col-3 mx-1 mt-2">
-                    <img class="img-fluid" src="images/codeigniter_logo.png" alt="" style="width:60px;margin-top:-6px;">
-                </div>
-                <div class="coding_logos col-3 mx-1 mt-2">
-                    <img class="img-fluid" src="images/laravel_logo.png" alt="" style="width:50px;">
-                </div>
+            <div id="portfolio" class="tab-pane fade mt-3">
+	            <div class="container content-details d-flex justify-content-center">
+	                <p>My Skills in Coding</p>
+	            </div>
+	            <div class="container row d-flex justify-content-center">
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/html_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/css_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/bootstrap_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/javascript_logo.png" alt="" style="width:70px;margin:-4px 0 0 0;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/jquery_logo.png" alt="" style="width:40px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/php_logo.png" alt="" style="width:38px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/codeigniter_logo.png" alt="" style="width:60px;margin-top:-6px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/laravel_logo.png" alt="" style="width:50px;">
+	                </div>
+	            </div>
+	            <div class="container content-details d-flex justify-content-center" style="margin-top: 20px;">
+	                <p>My Skills in Editing</p>
+	            </div>
+	            <div class="container row d-flex justify-content-center">
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/ae_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/ps_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/kinemaster_logo.png" alt="" style="width:50px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1">
+	                    <img class="img-fluid" src="images/PowerDirector-logo.png" alt="" style="width:70px;margin:-4px 0 0 0;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/InShot-logo.png" alt="" style="width:40px;">
+	                </div>
+	                <div class="coding_logos col-3 mx-1 mt-2">
+	                    <img class="img-fluid" src="images/pixellab_logo.png" alt="" style="width:38px;">
+	                </div>
+	            </div>
             </div>
         </div>
-        <div class="container bg-gradient mx-3 mt-3 col-11 d-flex rounded-circle image">
-            <img class="rounded-circle profile_pic" id="croppedImage" src="images/profile_pic.JPG" alt="Example image">
-        </div>
+        
     </div>
 </div>
 </body>
@@ -120,6 +190,23 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+	// Nav Tabs
+	// Select all tabs
+	$('.nav-item a').click(function(){
+	  $(this).tab('show');
+	})
+
+	// Select tab by name
+	$('.nav-item a[href="#portfolio"]').tab('show')
+
+	// Select first tab
+	$('.nav-item a:first').tab('show')
+
+	// Select fourth tab (zero-based)
+	$('.nav-item li:eq(3) a').tab('show')
+
+	// Image croping
+
     $(document).ready(function() {
     // Get the dimensions of the div
         var divWidth = $('.image').width();
@@ -132,5 +219,28 @@
             'object-fit': 'cover' // Ensure the image covers the div without stretching
         });
     });
+
+    // Resume file download
+
+    $(document).ready(function() {
+	    // URL of the PDF file
+	    var pdfUrl = './resume/Sriram_resume.pdf';
+
+	    // Function to trigger download
+	    function downloadPDF() {
+	        // Create an anchor element
+	        var link = document.createElement('a');
+	        link.href = pdfUrl;
+	        link.download = 'Sriram_resume.pdf'; // Set desired file name for download
+	        document.body.appendChild(link);
+	        link.click();
+	        document.body.removeChild(link);
+	    }
+
+	    // Bind click event to the button
+	    $('#download').click(function() {
+	        downloadPDF();
+	    });
+	});
 
 </script> 
